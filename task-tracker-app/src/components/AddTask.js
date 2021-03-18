@@ -39,7 +39,7 @@ const AddTask = ({ onAdd }) => {
                 <input type='checkbox' checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
             </div>
 
-            <input type='submit' value='Save Task' className='btn btn-block'/>
+            <input type='submit' value='Save Task' className='btn btn-block' onClick={() => onsubmit}/>
         </form>
     )
 }
