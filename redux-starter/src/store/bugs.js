@@ -56,7 +56,7 @@ export default bugsReducer.reducer;
 const url = "/bugs";
 
 export const loadBugs = () => (dispatch, getState) => {
-
+    
     const { lastFetch } = getState().entities.bugs;
     const diffInTime = moment().diff(moment(lastFetch), 'minutes');
     console.log(diffInTime)

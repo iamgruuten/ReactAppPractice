@@ -16,6 +16,7 @@ const Todo = () => {
         setTodoDetails(responseTodo);
       });
   }, []);
+  
   const { id: todoId, userId, title, completed } = todoDetails || {};
   return (
     <div>
